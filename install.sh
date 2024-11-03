@@ -18,11 +18,11 @@ echo "Устанавливаем необходимое ПО"
 #mkdir -p foundry
 #cd foundry
 #curl -L https://foundry.paradigm.xyz | bash
-#source ~/.bashrc
-#echo 'export PATH="$PATH:/root/.foundry/bin"' >> .profile
-#source .profile
+source ~/.bashrc
+echo 'export PATH="$PATH:/root/.foundry/bin"' >> .profile
+source .profile
 
-#foundryup
+foundryup
 
 echo "*******************************************************"
 echo "Скачиваем и импортируем кошелек по private key"
