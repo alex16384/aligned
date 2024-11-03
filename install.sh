@@ -4,7 +4,7 @@ echo "*******************************************************"
 curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/kuznica_logo.sh | bash
 echo "*******************************************************"
 echo "Обновляю пакеты, пожалуйста подождите....."
-bash <(curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/main%20install) &>/dev/null
+#bash <(curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/main%20install) &>/dev/null
 echo "Обновление успешно завершено."
 
 echo "Устанавливаем необходимое ПО"
