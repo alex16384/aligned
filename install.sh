@@ -29,7 +29,7 @@ echo "Скачиваем и импортируем кошелек по private k
 echo "*******************************************************"
 
 cd $HOME
-#git clone https://github.com/yetanotherco/aligned_layer.git && cd aligned_layer
+git clone https://github.com/yetanotherco/aligned_layer.git && cd aligned_layer
 cast wallet import --interactive wallet
 
 echo "*******************************************************"
