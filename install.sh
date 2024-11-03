@@ -4,32 +4,33 @@ echo "*******************************************************"
 curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/kuznica_logo.sh | bash
 echo "*******************************************************"
 echo "Обновляю пакеты, пожалуйста подождите....."
-bash <(curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/main%20install) &>/dev/null
+#bash <(curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/main%20install) &>/dev/null
 echo "Обновление успешно завершено."
 
 echo "Устанавливаем необходимое ПО"
-curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/Install_Go.sh | bash
-curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/Install_Rust.sh | bash
-source $HOME/.profile
-source "$HOME/.cargo/env"
+#curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/Install_Go.sh | bash
+#curl -s https://raw.githubusercontent.com/blackcat-team/kuznica/refs/heads/main/Install_Rust.sh | bash
+#source $HOME/.profile
+#source "$HOME/.cargo/env"
 
 # Устанавливаем Foundry
-cd $HOME
-mkdir -p foundry
-cd foundry
-curl -L https://foundry.paradigm.xyz | bash
-source ~/.bashrc
-echo 'export PATH="$PATH:/root/.foundry/bin"' >> .profile
-source .profile
+#cd $HOME
+#mkdir -p foundry
+#cd foundry
+#curl -L https://foundry.paradigm.xyz | bash
+#source ~/.bashrc
+#echo 'export PATH="$PATH:/root/.foundry/bin"' >> .profile
+#source .profile
 
-foundryup
+#foundryup
 
 echo "*******************************************************"
 echo "Скачиваем и импортируем кошелек по private key"
 echo "*******************************************************"
 
 cd $HOME
-git clone https://github.com/yetanotherco/aligned_layer.git && cd aligned_layer
+#git clone https://github.com/yetanotherco/aligned_layer.git
+cd aligned_layer
 cast wallet import --interactive wallet
 
 echo "*******************************************************"
